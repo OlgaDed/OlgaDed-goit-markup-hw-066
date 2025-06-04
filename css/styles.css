@@ -236,7 +236,7 @@ body {
 .mobile-socials {
   display: flex;
   justify-content: center;
-  gap: 24px; /* Зменште gap, якщо потрібно */
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
