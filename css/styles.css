@@ -181,17 +181,12 @@ body {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
-  padding-left: 20px;
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  /* justify-content: space-between; */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: block;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .mobile-nav-container {
@@ -203,9 +198,12 @@ body {
 }
 
 .mobile-address-icon {
-  position: absolute;
-  bottom: 20px;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .burger-checkbox:checked ~ .mobile-menu {
@@ -235,14 +233,24 @@ body {
   color: #404bbf;
 }
 
+.mobile-socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* Зменште gap, якщо потрібно */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 .mobile-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
   padding: 0;
-  list-style: none;
-  margin-bottom: 48px;
+  margin: 0 0 48px 0;
+  width: 100%;
+  align-items: center;
 }
 .mobile-address-link {
   font-weight: 500;
@@ -261,7 +269,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  padding: 0;
   list-style: none;
 }
 .mobile-socials-item {
