@@ -34,6 +34,7 @@
             <li><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-list">
             <li>
@@ -49,37 +50,44 @@
           </ul>
         </address>
 
-        <!-- чекбокс для контролю бургер-меню -->
-        <input type="checkbox" class="burger-checkbox" id="menu-toggle" />
-        <!-- кнопка-бургер -->
-        <label for="menu-toggle" class="burger">
-          <svg class="burger-open">
-            <use
-              xlink:href="./images/icons.svg#icon-heroicons-solid_menu"
-            ></use>
+        <!-- кнопка для контролю бургер-меню -->
+        <button
+          type="button"
+          class="burger-button"
+          aria-label="Open menu"
+          onclick="document.getElementById('mobile-menu').classList.add('menu-open')"
+        >
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
-        </label>
+        </button>
+      </div>
+    </header>
 
-        <!-- мобільне меню -->
-        <div class="mobile-menu">
-          <label for="menu-toggle" class="burger">
-            <svg class="burger-close">
-              <use xlink:href="./images/icons.svg#icon-Vector-close"></use>
-            </svg>
-          </label>
+    <!-- мобільне меню -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-content">
+        <button
+          type="button"
+          class="mobile-menu-close"
+          onclick="document.getElementById('mobile-menu').classList.remove('menu-open')"
+        >
+          <svg class="close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Vector-close"></use>
+          </svg>
+        </button>
 
-          <nav class="mobile-nav">
-            <ul class="mobile-nav-list">
-              <li>
-                <a href="./index.html" class="mobile-nav-link current"
-                  >Studio</a
-                >
-              </li>
-              <li><a href="" class="mobile-nav-link">Portfolio</a></li>
-              <li><a href="" class="mobile-nav-link">Contacts</a></li>
-            </ul>
-          </nav>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="./index.html" class="mobile-nav-link current">Studio</a>
+            </li>
+            <li><a href="" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="" class="mobile-nav-link">Contacts</a></li>
+          </ul>
+        </nav>
 
+        <div class="mobile-contacts">
           <address class="mobile-address">
             <ul class="mobile-address-list">
               <li>
@@ -134,7 +142,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
     <!-- Унікальний контент сторінки -->
     <main>
