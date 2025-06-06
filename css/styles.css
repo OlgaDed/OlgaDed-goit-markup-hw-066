@@ -1197,8 +1197,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8px;
-  height: 8px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
